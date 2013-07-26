@@ -228,6 +228,12 @@ static struct fs_path_config android_dirs[] = {
 ** and will allow partial matches.
 */
 static struct fs_path_config android_files[] = {
+    { 00440, AID_BLUETOOTH, AID_BLUETOOTH, "system/etc/bluetooth/main.conf" },
+    { 00440, AID_BLUETOOTH, AID_BLUETOOTH, "system/etc/bluetooth/input.conf" },
+    { 00440, AID_BLUETOOTH, AID_BLUETOOTH, "system/etc/bluetooth/audio.conf" },
+    { 00440, AID_BLUETOOTH, AID_BLUETOOTH, "system/etc/bluetooth/network.conf" },
+    { 00444, AID_NET_BT,    AID_NET_BT,    "system/etc/bluetooth/blacklist.conf" },
+    { 00640, AID_SYSTEM,    AID_SYSTEM,    "system/etc/bluetooth" },
     { 00440, AID_ROOT,      AID_SHELL,     "system/etc/init.goldfish.rc" },
     { 00550, AID_ROOT,      AID_SHELL,     "system/etc/init.goldfish.sh" },
     { 00440, AID_ROOT,      AID_SHELL,     "system/etc/init.trout.rc" },
